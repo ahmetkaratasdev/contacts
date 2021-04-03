@@ -13,14 +13,21 @@
   }
 }
 
+.App-background {
+  color: green;
+}
+
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 2cm;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(0.7cm);
+  /* font-style: italic; */
+  font-family: fantasy;
   color: white;
 }
 
@@ -36,3 +43,42 @@
     transform: rotate(360deg);
   }
 }
+.Size {
+  font-size: 4cm;
+}
+
+.Contact-name {
+  display: flex;
+  font-size: 25px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 2cm;
+  background-color: #ebe8e8;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-bottom: black;
+  border-width: 2px;
+  border-bottom-style: solid;
+}
+
+.active, .Contact-name:hover {
+  background-color: #90ee90;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* .textbox {
+  width:100px;
+  transition: 0.5s;
+}
+
+.textbox:focus {
+  width:150px;
+  transition: 0.5s;
+} */
