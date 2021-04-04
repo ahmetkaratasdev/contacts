@@ -44,11 +44,39 @@ export default class App extends React.Component {
                     person.address.zipcode
                     }</a>
                     <h3></h3>
+                    <div>
+                      <Toggle render={({on, toggle}) => (
+                        <div>
+                          <div onClick={toggle}> Geo:(click to view more/less)</div>
+                            {on &&
+                            <div>
+                              <a>lat: {person.address.geo.lat}, </a>
+                              <a>lng: {person.address.geo.lng}</a>
+                            </div>
+                            }
+                        </div>
+                      )} />
+                    </div>
+                    <h3></h3>
                     <a>Phone: {person.phone}</a>
                     <h3></h3>
                     <a>Website: {person.website}</a>
                     <h3></h3>
-                    <a>Company: {person.company.name}</a>
+                    {/* <a>Company: {person.company.name}</a> */}
+                    <div>
+                      <Toggle render={({on, toggle}) => (
+                        <div>
+                          <div onClick={toggle}>Company: {person.company.name} (click to view more/less)</div>
+                            {on &&
+                            <div>
+                              <a>Company catch Phrase: Multi-layered client-server neural-net</a>
+                              <br></br>
+                              <a>Company bs: harness real-time e-markets</a>
+                            </div>
+                            }
+                        </div>
+                      )} />
+                    </div>
                 </div>
               }
             </div>
